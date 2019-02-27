@@ -12,8 +12,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let a = mixTwoAudioResources()
-        // Do any additional setup after loading the view, typically from a nib.
+        let mergedTrackExportPath = mixTwoAudioResources()
+        print("export path is \(mergedTrackExportPath)")
     }
 
     override func didReceiveMemoryWarning() {
@@ -69,9 +69,6 @@ class ViewController: UIViewController {
             print("Completed Sucessfully")
         })
 
-        print("export path is \(exportPath)")
-        
-        
         return exportPath
         
     }
